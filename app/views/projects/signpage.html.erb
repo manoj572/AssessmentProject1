@@ -1,0 +1,26 @@
+<center>
+<h1>welcome to signup page</h1>
+<div class="container" >
+<%= form_with model: @create do|t|%>
+    <%= t.label :username,"username"%>
+    <%= t.text_field :username %><br><br>
+    <%= t.label :password,"password"%>
+    <%= t.text_field :password %><br><br>
+    <%= t.label :email,"email"%>
+    <%= t.text_field :email %><br><br>
+    <%= t.submit "create account" %>
+    <% end %>
+</div>
+<div class="container" style="background-color:#f1f1f1">
+</div>
+</center>
+
+
+
+
+
+
+
+
+
+

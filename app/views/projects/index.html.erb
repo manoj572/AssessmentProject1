@@ -1,0 +1,10 @@
+<h1>listing page</h1>
+<ul>
+<% @products.each do |project|%>
+    <li>
+    <a href="/projects/<%=project.id %>">
+    <%= project.title%>
+    </a>
+    </li>
+    <% end %>
+    </ul>
