@@ -2,17 +2,18 @@
 <h1>welcome to signup page</h1>
 <div class="container" >
 <%= form_with model: @create do|t|%>
-    <%= t.label :username,"username"%>
-    <%= t.text_field :username %><br><br>
-    <%= t.label :password,"password"%>
-    <%= t.text_field :password %><br><br>
-    <%= t.label :email,"email"%>
-    <%= t.text_field :email %><br><br>
-    <%= t.submit "create account" %>
+    <%= t.label :username,"Username"%>
+    <%= t.text_field :username, placeholder: "Enter username"%><br><br>
+    <%= t.label :password,"Password"%>
+    <%= t.password_field :password, placeholder: "Enter password" %><br><br>
+    <%= t.label :email,"Email"%>
+    <%= t.text_field :email, placeholder: "Enter email" %><br><br>
+    <%= t.submit "Create account" %>
     <% end %>
 </div>
 <div class="container" style="background-color:#f1f1f1">
 </div>
+<p>If you already have an account click here <%= link_to "Login", projects_login_path %></p>
 </center>
 
 

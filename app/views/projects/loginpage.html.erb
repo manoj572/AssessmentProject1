@@ -6,18 +6,18 @@
 <div class="container">
 <%= form_with model: @create do|t|%>
     <div class="form-group">
-    <%= t.label :username,"username"%>
-    <%= t.text_field :username %><br><br>
+    <%= t.label :username,"Username"%>
+    <%= t.text_field :username, placeholder: "Enter username" %><br><br>
     </div>
 
     <div class="form-group">
-    <%= t.label :password,"password"%>
-    <%= t.text_field :password %><br><br>
+    <%= t.label :password,"Password"%>
+    <%= t.password_field :password, placeholder: "Enter password" %><br><br>
     </div>
 
     <div class="form-group">
-    <%= t.label :email,"email"%>
-    <%= t.text_field :email %><br><br>
+    <%= t.label :email,"Email"%>
+    <%= t.text_field :email, placeholder: "Enter email" %><br><br>
     </div>
 
     <div class="form-group">
@@ -29,4 +29,5 @@
 </div>
 </div>
 </div>
+<p>If you new user click here <%= link_to "User", projects_signup_path %></p>
 </center>
