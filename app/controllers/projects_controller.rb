@@ -11,11 +11,11 @@ class ProjectsController < ApplicationController
        end
         if @creates.save
           #@create=Create.find_by(params[:username])
-          @authentication="successfully created account"
-          render :authentication
+          @authentication_sign="successfully created account"
+          render :'authentication_sign'
         else
           @authentication="failed"
-          render :authentication
+          render :'authentication'
        end
     end
     def loginpage
@@ -32,12 +32,12 @@ class ProjectsController < ApplicationController
                 end
             end
         end
-        if status==true
-            @authentication="login success"
-            render :authentication
+        if @status==true
+            @authentication_login="login success"
+            render :'authentication_login'
         else
             @authentication="login failed"
-            render :authentication
+            render :'authentication'
         end
     end
     
